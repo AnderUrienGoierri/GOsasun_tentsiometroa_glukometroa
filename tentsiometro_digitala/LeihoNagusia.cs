@@ -87,18 +87,15 @@ namespace tentsiometro_digitala
                 case Egoera.Piztuta:
                     lblOrduaData.Text = DateTime.Now.ToString("yyyy-MM-dd  HH:mm:ss");
                     lblMezua.Text = "Jarri manguitoa besoan\neta sakatu HASI";
-                    lblSysDiaPul.Text = "";
-                    lblEmaitzak.Text = "--- \n--- \n---";
-                    lblEmaitzak.ForeColor = Color.Gray;
-                    lblSysDiaPul.Text = "SYS\nDIA\nPUL";
+                    lblSysDiaPul.Text = "SYS: ---\nDIA: ---\nPUL: ---";
+                    lblEmaitzak.Text = "";
                     progressBar.Visible = false;
                     break;
 
                 case Egoera.Neurtzen:
                     lblMezua.Text = "Neurtzen...";
-                    lblSysDiaPul.Text = "SYS\nDIA\nPUL";
-                    lblEmaitzak.Text = "--- \n--- \n---";
-                    lblEmaitzak.ForeColor = Color.Black;
+                    lblSysDiaPul.Text = "SYS: ---\nDIA: ---\nPUL: ---";
+                    lblEmaitzak.Text = "";
                     progressBar.Visible = true;
                     progressBar.Value = 0;
                     break;
@@ -153,7 +150,8 @@ namespace tentsiometro_digitala
                 if (tickCount % 2 == 0) 
                     unekoPresioa += 3;
 
-                lblEmaitzak.Text = string.Format("{0}\n---\n{1}", unekoPresioa, unekoPultsua);
+                lblSysDiaPul.Text = $"SYS: {unekoPresioa,3}\nDIA: ---\nPUL: ---";
+                lblEmaitzak.Text = "";
 
                 if (unekoPresioa >= helburuSistolikoa)
                 {
@@ -179,7 +177,8 @@ namespace tentsiometro_digitala
                 if (tickCount % 2 == 0) 
                     unekoPresioa -= 2;
 
-                lblEmaitzak.Text = string.Format("{0}\n{1}\n{2}", helburuSistolikoa, unekoPresioa, unekoPultsua);
+                lblSysDiaPul.Text = $"SYS: {helburuSistolikoa,3}\nDIA: {unekoPresioa,3}\nPUL: ---";
+                lblEmaitzak.Text = "";
 
                 if (unekoPresioa <= helburuDiastolikoa)
                 {
@@ -206,7 +205,8 @@ namespace tentsiometro_digitala
             unekoEgoera = Egoera.Emaitzak;
             EguneratuPantailaEgoerarenArabera();
 
-            lblEmaitzak.Text = string.Format("{0}\n{1}\n{2}", helburuSistolikoa, helburuDiastolikoa, helburuPultsua);
+            lblSysDiaPul.Text = $"SYS: {helburuSistolikoa,3}\nDIA: {helburuDiastolikoa,3}\nPUL: {helburuPultsua,3}";
+            lblEmaitzak.Text = "";
 
             GordeDatuakXML(helburuSistolikoa, helburuDiastolikoa, helburuPultsua);
         }
@@ -297,6 +297,16 @@ namespace tentsiometro_digitala
             {
                 return new HttpResult { Success = false, ErrorMessage = ex.Message };
             }
+        }
+
+        private void picTentsiometroa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMezua_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

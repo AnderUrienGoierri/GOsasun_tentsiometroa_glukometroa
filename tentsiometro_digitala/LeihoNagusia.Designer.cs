@@ -48,10 +48,9 @@ namespace tentsiometro_digitala
             // 
             this.lblOrduaData.BackColor = System.Drawing.Color.Transparent;
             this.lblOrduaData.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.lblOrduaData.Location = new System.Drawing.Point(96, 210);
-            this.lblOrduaData.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblOrduaData.Location = new System.Drawing.Point(48, 109);
             this.lblOrduaData.Name = "lblOrduaData";
-            this.lblOrduaData.Size = new System.Drawing.Size(360, 38);
+            this.lblOrduaData.Size = new System.Drawing.Size(180, 20);
             this.lblOrduaData.TabIndex = 0;
             this.lblOrduaData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -59,12 +58,12 @@ namespace tentsiometro_digitala
             // 
             this.lblMezua.BackColor = System.Drawing.Color.Transparent;
             this.lblMezua.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.lblMezua.Location = new System.Drawing.Point(86, 252);
-            this.lblMezua.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblMezua.Location = new System.Drawing.Point(43, 131);
             this.lblMezua.Name = "lblMezua";
-            this.lblMezua.Size = new System.Drawing.Size(356, 119);
+            this.lblMezua.Size = new System.Drawing.Size(163, 62);
             this.lblMezua.TabIndex = 1;
             this.lblMezua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMezua.Click += new System.EventHandler(this.lblMezua_Click);
             // 
             // lblSysDiaPul
             // 
@@ -72,10 +71,9 @@ namespace tentsiometro_digitala
             this.lblSysDiaPul.BackColor = System.Drawing.Color.Transparent;
             this.lblSysDiaPul.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.lblSysDiaPul.ForeColor = System.Drawing.Color.Black;
-            this.lblSysDiaPul.Location = new System.Drawing.Point(130, 337);
-            this.lblSysDiaPul.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblSysDiaPul.Location = new System.Drawing.Point(65, 175);
             this.lblSysDiaPul.Name = "lblSysDiaPul";
-            this.lblSysDiaPul.Size = new System.Drawing.Size(0, 35);
+            this.lblSysDiaPul.Size = new System.Drawing.Size(0, 18);
             this.lblSysDiaPul.TabIndex = 2;
             // 
             // lblEmaitzak
@@ -83,19 +81,17 @@ namespace tentsiometro_digitala
             this.lblEmaitzak.BackColor = System.Drawing.Color.Transparent;
             this.lblEmaitzak.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold);
             this.lblEmaitzak.ForeColor = System.Drawing.Color.Black;
-            this.lblEmaitzak.Location = new System.Drawing.Point(300, 485);
-            this.lblEmaitzak.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblEmaitzak.Location = new System.Drawing.Point(150, 252);
             this.lblEmaitzak.Name = "lblEmaitzak";
-            this.lblEmaitzak.Size = new System.Drawing.Size(260, 173);
+            this.lblEmaitzak.Size = new System.Drawing.Size(130, 90);
             this.lblEmaitzak.TabIndex = 3;
             this.lblEmaitzak.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(100, 510);
-            this.progressBar.Margin = new System.Windows.Forms.Padding(6);
+            this.progressBar.Location = new System.Drawing.Point(50, 265);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(266, 25);
+            this.progressBar.Size = new System.Drawing.Size(133, 13);
             this.progressBar.TabIndex = 0;
             this.progressBar.Visible = false;
             // 
@@ -106,10 +102,9 @@ namespace tentsiometro_digitala
             this.btnHasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHasi.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.btnHasi.ForeColor = System.Drawing.Color.White;
-            this.btnHasi.Location = new System.Drawing.Point(490, 616);
-            this.btnHasi.Margin = new System.Windows.Forms.Padding(6);
+            this.btnHasi.Location = new System.Drawing.Point(279, 273);
             this.btnHasi.Name = "btnHasi";
-            this.btnHasi.Size = new System.Drawing.Size(91, 49);
+            this.btnHasi.Size = new System.Drawing.Size(53, 25);
             this.btnHasi.TabIndex = 1;
             this.btnHasi.Text = "HASI";
             this.btnHasi.UseVisualStyleBackColor = false;
@@ -127,10 +122,9 @@ namespace tentsiometro_digitala
             // 
             // picLogo
             // 
-            this.picLogo.Location = new System.Drawing.Point(150, 110);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(6);
+            this.picLogo.Location = new System.Drawing.Point(75, 57);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(600, 154);
+            this.picLogo.Size = new System.Drawing.Size(300, 80);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 1;
             this.picLogo.TabStop = false;
@@ -142,25 +136,24 @@ namespace tentsiometro_digitala
             this.picTentsiometroa.Controls.Add(this.lblSysDiaPul);
             this.picTentsiometroa.Controls.Add(this.progressBar);
             this.picTentsiometroa.Controls.Add(this.btnHasi);
-            this.picTentsiometroa.Location = new System.Drawing.Point(70, 140);
-            this.picTentsiometroa.Margin = new System.Windows.Forms.Padding(6);
+            this.picTentsiometroa.Location = new System.Drawing.Point(35, 73);
             this.picTentsiometroa.Name = "picTentsiometroa";
-            this.picTentsiometroa.Size = new System.Drawing.Size(760, 923);
+            this.picTentsiometroa.Size = new System.Drawing.Size(380, 480);
             this.picTentsiometroa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picTentsiometroa.TabIndex = 0;
             this.picTentsiometroa.TabStop = false;
+            this.picTentsiometroa.Click += new System.EventHandler(this.picTentsiometroa_Click);
             // 
             // LeihoNagusia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(914, 1260);
+            this.ClientSize = new System.Drawing.Size(457, 517);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.picTentsiometroa);
             this.Controls.Add(this.lblEmaitzak);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.Name = "LeihoNagusia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

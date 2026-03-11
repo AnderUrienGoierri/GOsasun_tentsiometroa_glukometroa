@@ -236,7 +236,7 @@ namespace tentsiometro_digitala
 
                 root.Add(neurketaBerria);
                 
-                // 2. Gorde XAMPP karpetan
+                // 2. Gorde APACHE karpetan
                 if (!Directory.Exists(karpetaBidea)) Directory.CreateDirectory(karpetaBidea);
                 doc.Save(fitxategiaBidea);
 
@@ -249,11 +249,11 @@ namespace tentsiometro_digitala
                 
                 if (emaitza.Success)
                 {
-                    MessageBox.Show(string.Format("Datuak ongi gorde dira lokalki, XAMPP karpetan ETA zerbitzarian:\n{0}\n\nZERBITZARIAK DIO: {1}", izenaFitxategia, emaitza.ErrorMessage), "Gordeta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(string.Format("Datuak ongi gorde dira lokalki, APACHE karpetan ETA zerbitzarian:\n{0}\n\nZERBITZARIAK DIO: {1}", izenaFitxategia, emaitza.ErrorMessage), "Gordeta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                     MessageBox.Show(string.Format("Datuak LOKALKI eta XAMPPn gorde dira.\n\nERROREA ZERBITZARIAN: {0}", emaitza.ErrorMessage), "Errorea Zerbitzarian", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                     MessageBox.Show(string.Format("Datuak LOKALKI eta APACHEn gorde dira.\n\nERROREA ZERBITZARIAN: {0}", emaitza.ErrorMessage), "Errorea Zerbitzarian", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)

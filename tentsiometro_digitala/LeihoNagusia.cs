@@ -192,6 +192,7 @@ namespace tentsiometro_digitala
 
                 if (extraTicks >= 60) // 3 segundo gehiago (50ms * 60 = 3000ms)
                 {
+                    progressBar.Value = 100;
                     timer1.Stop();
                     if (hustuSoinua != null) hustuSoinua.Stop();
                     btnHasi.Enabled = true;
@@ -200,9 +201,10 @@ namespace tentsiometro_digitala
                     return;
                 }
                 
-                int totalDrop = helburuSistolikoa - helburuDiastolikoa;
-                int currentDrop = helburuSistolikoa - unekoPresioa;
-                int prog = 50 + (int)(50.0 * currentDrop / totalDrop);
+                int totalPhase2Work = (helburuSistolikoa - helburuDiastolikoa) + 60;
+                int currentPhase2Work = (helburuSistolikoa - unekoPresioa) + extraTicks;
+                int prog = 50 + (int)(50.0 * currentPhase2Work / totalPhase2Work);
+                
                 if (prog > 100) prog = 100; else if (prog < 0) prog = 0;
                 progressBar.Value = prog;
             }

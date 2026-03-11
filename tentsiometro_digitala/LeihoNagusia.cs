@@ -14,6 +14,7 @@ namespace tentsiometro_digitala
         private Egoera unekoEgoera = Egoera.Itzalita;
 
         private int tickCount = 0;
+        private int extraTicks = 0;
         private Random random;
         private SoundPlayer motorSoinua;
         private SoundPlayer hustuSoinua;
@@ -121,6 +122,7 @@ namespace tentsiometro_digitala
                 EguneratuPantailaEgoerarenArabera();
                 btnHasi.Enabled = false;
                 tickCount = 0;
+                extraTicks = 0;
                 
                 // Helburuko balioak prestatu aldez aurretik
                 helburuSistolikoa = random.Next(100, 151); // 100 - 150
@@ -174,16 +176,22 @@ namespace tentsiometro_digitala
             // HUSTETZE FASEA (Sistolikoa finkatu, presio-jaitsiera Diastolikoan erakutsi)
             else
             {
-                if (tickCount % 2 == 0) 
-                    unekoPresioa -= 2;
+                if (unekoPresioa > helburuDiastolikoa)
+                {
+                    if (tickCount % 2 == 0) 
+                        unekoPresioa -= 2;
+                }
+                else
+                {
+                    unekoPresioa = helburuDiastolikoa;
+                    extraTicks++;
+                }
 
                 lblSysDiaPul.Text = $"SYS: {helburuSistolikoa,3}\nDIA: {unekoPresioa,3}\nPUL: ---";
                 lblEmaitzak.Text = "";
 
-                if (unekoPresioa <= helburuDiastolikoa)
+                if (extraTicks >= 60) // 3 segundo gehiago (50ms * 60 = 3000ms)
                 {
-                    unekoPresioa = helburuDiastolikoa;
-                    
                     timer1.Stop();
                     if (hustuSoinua != null) hustuSoinua.Stop();
                     btnHasi.Enabled = true;

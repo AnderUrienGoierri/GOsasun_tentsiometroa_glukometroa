@@ -152,7 +152,7 @@ namespace tentsiometro_digitala
                 if (tickCount % 2 == 0) 
                     unekoPresioa += 3;
 
-                lblSysDiaPul.Text = $"SYS: {unekoPresioa,3}\nDIA: ---\nPUL: ---";
+                lblSysDiaPul.Text = $"SYS: {unekoPresioa,3}\nDIA: ---\nPUL: {unekoPultsua,3}";
                 lblEmaitzak.Text = "";
 
                 if (unekoPresioa >= helburuSistolikoa)
@@ -187,7 +187,7 @@ namespace tentsiometro_digitala
                     extraTicks++;
                 }
 
-                lblSysDiaPul.Text = $"SYS: {helburuSistolikoa,3}\nDIA: {unekoPresioa,3}\nPUL: ---";
+                lblSysDiaPul.Text = $"SYS: {helburuSistolikoa,3}\nDIA: {unekoPresioa,3}\nPUL: {unekoPultsua,3}";
                 lblEmaitzak.Text = "";
 
                 if (extraTicks >= 60) // 3 segundo gehiago (50ms * 60 = 3000ms)

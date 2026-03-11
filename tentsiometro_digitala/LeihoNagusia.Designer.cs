@@ -94,7 +94,7 @@ namespace tentsiometro_digitala
             // progressBar
             // 
             this.progressBar.Location = new System.Drawing.Point(100, 510);
-            this.progressBar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(6);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(266, 25);
             this.progressBar.TabIndex = 0;
@@ -108,7 +108,7 @@ namespace tentsiometro_digitala
             this.btnHasi.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.btnHasi.ForeColor = System.Drawing.Color.White;
             this.btnHasi.Location = new System.Drawing.Point(558, 525);
-            this.btnHasi.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnHasi.Margin = new System.Windows.Forms.Padding(6);
             this.btnHasi.Name = "btnHasi";
             this.btnHasi.Size = new System.Drawing.Size(106, 48);
             this.btnHasi.TabIndex = 1;
@@ -129,7 +129,7 @@ namespace tentsiometro_digitala
             // picLogo
             // 
             this.picLogo.Location = new System.Drawing.Point(149, 117);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(6);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(600, 154);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,7 +143,7 @@ namespace tentsiometro_digitala
             this.picTentsiometroa.Controls.Add(this.progressBar);
             this.picTentsiometroa.Controls.Add(this.btnHasi);
             this.picTentsiometroa.Location = new System.Drawing.Point(74, 197);
-            this.picTentsiometroa.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.picTentsiometroa.Margin = new System.Windows.Forms.Padding(6);
             this.picTentsiometroa.Name = "picTentsiometroa";
             this.picTentsiometroa.Size = new System.Drawing.Size(760, 923);
             this.picTentsiometroa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -156,13 +156,13 @@ namespace tentsiometro_digitala
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(914, 994);
+            this.ClientSize = new System.Drawing.Size(914, 1131);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.lblMezua);
             this.Controls.Add(this.picTentsiometroa);
             this.Controls.Add(this.lblEmaitzak);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.Name = "LeihoNagusia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

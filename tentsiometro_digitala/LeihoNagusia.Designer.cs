@@ -59,7 +59,7 @@ namespace tentsiometro_digitala
             // 
             this.lblMezua.BackColor = System.Drawing.Color.Transparent;
             this.lblMezua.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.lblMezua.Location = new System.Drawing.Point(192, 446);
+            this.lblMezua.Location = new System.Drawing.Point(118, 249);
             this.lblMezua.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblMezua.Name = "lblMezua";
             this.lblMezua.Size = new System.Drawing.Size(281, 74);
@@ -139,6 +139,7 @@ namespace tentsiometro_digitala
             // picTentsiometroa
             // 
             this.picTentsiometroa.Controls.Add(this.lblOrduaData);
+            this.picTentsiometroa.Controls.Add(this.lblMezua);
             this.picTentsiometroa.Controls.Add(this.lblSysDiaPul);
             this.picTentsiometroa.Controls.Add(this.progressBar);
             this.picTentsiometroa.Controls.Add(this.btnHasi);
@@ -158,7 +159,6 @@ namespace tentsiometro_digitala
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(914, 1131);
             this.Controls.Add(this.picLogo);
-            this.Controls.Add(this.lblMezua);
             this.Controls.Add(this.picTentsiometroa);
             this.Controls.Add(this.lblEmaitzak);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

@@ -1,0 +1,14 @@
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\Debug\tentsiometro_digitala.exe.config
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\Debug\tentsiometro_digitala.exe
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\Debug\tentsiometro_digitala.pdb
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.Properties.Resources.resources
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.csproj.GenerateResource.cache
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.exe
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.pdb
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\Debug\ui_irudiak\GOsasun_logoa.png
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\Debug\ui_irudiak\ui_tentsiometroa.png
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\Debug\audioak\motor.wav
+c:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.LeihoNagusia.resources
+c:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\Debug\audioak\hustu.wav
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.csproj.AssemblyReference.cache
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.csproj.CoreCompileInputs.cache

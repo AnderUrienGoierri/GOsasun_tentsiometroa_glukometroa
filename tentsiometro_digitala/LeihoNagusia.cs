@@ -15,6 +15,7 @@ namespace tentsiometro_digitala
 
         private int tickCount = 0;
         private int extraTicks = 0;
+        private int phaseDelayTicks = 0;
         private Random random;
         private SoundPlayer motorSoinua;
         private SoundPlayer hustuSoinua;
@@ -123,6 +124,7 @@ namespace tentsiometro_digitala
                 btnHasi.Enabled = false;
                 tickCount = 0;
                 extraTicks = 0;
+                phaseDelayTicks = 0;
                 
                 // Helburuko balioak prestatu aldez aurretik
                 helburuSistolikoa = random.Next(100, 151); // 100 - 150
@@ -152,13 +154,23 @@ namespace tentsiometro_digitala
                 if (tickCount % 2 == 0) 
                     unekoPresioa += 3;
 
-                lblSysDiaPul.Text = $"SYS: {unekoPresioa,3}\nDIA: ---\nPUL: {unekoPultsua,3}";
+                if (phaseDelayTicks < 40) // 2 segundoko itxaronaldia hasieran
+                {
+                    phaseDelayTicks++;
+                    lblSysDiaPul.Text = $"SYS: ---\nDIA: ---\nPUL: {unekoPultsua,3}";
+                }
+                else
+                {
+                    lblSysDiaPul.Text = $"SYS: {unekoPresioa,3}\nDIA: ---\nPUL: {unekoPultsua,3}";
+                }
+                
                 lblEmaitzak.Text = "";
 
                 if (unekoPresioa >= helburuSistolikoa)
                 {
                     unekoPresioa = helburuSistolikoa;
                     puzteaAmaituta = true;
+                    phaseDelayTicks = 0; // Reset delay for the next phase
                     if (motorSoinua != null) motorSoinua.Stop();
 
                     if (hustuSoinua != null && !string.IsNullOrEmpty(hustuSoinua.SoundLocation))
@@ -187,7 +199,16 @@ namespace tentsiometro_digitala
                     extraTicks++;
                 }
 
-                lblSysDiaPul.Text = $"SYS: {helburuSistolikoa,3}\nDIA: {unekoPresioa,3}\nPUL: {unekoPultsua,3}";
+                if (phaseDelayTicks < 40) // 2 segundoko itxaronaldia hustutzen hastean
+                {
+                    phaseDelayTicks++;
+                    lblSysDiaPul.Text = $"SYS: {helburuSistolikoa,3}\nDIA: ---\nPUL: {unekoPultsua,3}";
+                }
+                else
+                {
+                    lblSysDiaPul.Text = $"SYS: {helburuSistolikoa,3}\nDIA: {unekoPresioa,3}\nPUL: {unekoPultsua,3}";
+                }
+                
                 lblEmaitzak.Text = "";
 
                 if (extraTicks >= 60) // 3 segundo gehiago (50ms * 60 = 3000ms)

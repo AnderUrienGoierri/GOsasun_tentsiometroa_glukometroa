@@ -98,7 +98,7 @@ namespace tentsiometro_digitala
                     lblMezua.Text = "Neurtzen...";
                     lblSysDiaPul.Text = "SYS\nDIA\nPUL";
                     lblEmaitzak.Text = "--- \n--- \n---";
-                    lblEmaitzak.ForeColor = Color.Gray;
+                    lblEmaitzak.ForeColor = Color.Black;
                     progressBar.Visible = true;
                     progressBar.Value = 0;
                     break;
@@ -147,18 +147,17 @@ namespace tentsiometro_digitala
             tickCount++;
             int unekoPultsua = random.Next(helburuPultsua - 3, helburuPultsua + 4); 
 
-            // PUZTE FASEA (Lehenik irakurketa gora egiten du Sistoliko lerroan)
+            // PUZTE FASEA (Uneko presioa Sistolikoaren lerroan agertzen da igotzen)
             if (!puzteaAmaituta)
             {
-                // Abiadura lehen zegoenaren ERDIA (3 -> 1.5 edo bakoitzean gutxiago gehituz)
                 if (tickCount % 2 == 0) 
                     unekoPresioa += 3;
 
                 lblEmaitzak.Text = string.Format("{0}\n---\n{1}", unekoPresioa, unekoPultsua);
 
-                if (unekoPresioa >= (helburuSistolikoa + 20))
+                if (unekoPresioa >= helburuSistolikoa)
                 {
-                    unekoPresioa = helburuSistolikoa + 20;
+                    unekoPresioa = helburuSistolikoa;
                     puzteaAmaituta = true;
                     if (motorSoinua != null) motorSoinua.Stop();
 
@@ -170,27 +169,17 @@ namespace tentsiometro_digitala
                     }
                 }
                 
-                int prog = (int)(50.0 * unekoPresioa / (helburuSistolikoa + 20));
+                int prog = (int)(50.0 * unekoPresioa / helburuSistolikoa);
                 if (prog > 100) prog = 100;
                 progressBar.Value = prog;
             }
-            // HUSTETZE FASEA (Bigarrenik irakurketa behera Diastoliko lerroan, Sistolikoa finkatuta)
+            // HUSTETZE FASEA (Sistolikoa finkatu, presio-jaitsiera Diastolikoan erakutsi)
             else
             {
-                // Abiadura lehen zegoenaren ERDIA (2 -> 1) begi bistarako leunagoa izateko
                 if (tickCount % 2 == 0) 
                     unekoPresioa -= 2;
 
-                if (unekoPresioa > helburuSistolikoa)
-                {
-                    // Oraindik Sistolikoa baino altuago gaude (presio orokorra erakusten)
-                    lblEmaitzak.Text = string.Format("{0}\n---\n{1}", unekoPresioa, unekoPultsua);
-                }
-                else
-                {
-                    // Sistolikoa gainditu dugu, finkatu, eta hartu Diastoleria
-                    lblEmaitzak.Text = string.Format("{0}\n{1}\n{2}", helburuSistolikoa, unekoPresioa, unekoPultsua);
-                }
+                lblEmaitzak.Text = string.Format("{0}\n{1}\n{2}", helburuSistolikoa, unekoPresioa, unekoPultsua);
 
                 if (unekoPresioa <= helburuDiastolikoa)
                 {
@@ -204,8 +193,8 @@ namespace tentsiometro_digitala
                     return;
                 }
                 
-                int totalDrop = (helburuSistolikoa + 20) - helburuDiastolikoa;
-                int currentDrop = (helburuSistolikoa + 20) - unekoPresioa;
+                int totalDrop = helburuSistolikoa - helburuDiastolikoa;
+                int currentDrop = helburuSistolikoa - unekoPresioa;
                 int prog = 50 + (int)(50.0 * currentDrop / totalDrop);
                 if (prog > 100) prog = 100; else if (prog < 0) prog = 0;
                 progressBar.Value = prog;

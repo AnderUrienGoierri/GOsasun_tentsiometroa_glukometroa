@@ -10,4 +10,5 @@ C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\
 C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\Debug\audioak\motor.wav
 c:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.LeihoNagusia.resources
 c:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\bin\Debug\audioak\hustu.wav
-c:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.csprojResolveAssemblyReference.cache
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.csproj.AssemblyReference.cache
+C:\Ander\Workspace\C\proiektuak\tentsiometro_digitala\tentsiometro_digitala\obj\Debug\tentsiometro_digitala.csproj.CoreCompileInputs.cache

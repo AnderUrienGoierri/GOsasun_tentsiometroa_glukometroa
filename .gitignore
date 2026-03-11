@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+[Bb]in/
+[Ob]j/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages
+packages/
+
+# Project specific
+tentsiometro_digitala/neurketak/
+neurketak/
+
+# Audio/Images if they are generated or shouldn't be tracked (though user might want them)
+# But user specifically mentioned 'neurketak' folder.

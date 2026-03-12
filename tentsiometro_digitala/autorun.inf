@@ -1,0 +1,5 @@
+[autorun]
+open=tentsiometro_digitala.exe
+action=Hasi Tentsiometro Digitala
+label=GOSasun Tentsiometroa
+icon=favicon.ico

@@ -122,7 +122,7 @@ namespace tentsiometro_digitala
             // 
             // picLogo
             // 
-            this.picLogo.Location = new System.Drawing.Point(74, 61);
+            this.picLogo.Location = new System.Drawing.Point(69, 2);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(300, 80);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,7 +136,7 @@ namespace tentsiometro_digitala
             this.picTentsiometroa.Controls.Add(this.lblSysDiaPul);
             this.picTentsiometroa.Controls.Add(this.progressBar);
             this.picTentsiometroa.Controls.Add(this.btnHasi);
-            this.picTentsiometroa.Location = new System.Drawing.Point(37, 102);
+            this.picTentsiometroa.Location = new System.Drawing.Point(30, 37);
             this.picTentsiometroa.Name = "picTentsiometroa";
             this.picTentsiometroa.Size = new System.Drawing.Size(380, 480);
             this.picTentsiometroa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,7 +149,7 @@ namespace tentsiometro_digitala
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(457, 586);
+            this.ClientSize = new System.Drawing.Size(509, 600);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.picTentsiometroa);
             this.Controls.Add(this.lblEmaitzak);

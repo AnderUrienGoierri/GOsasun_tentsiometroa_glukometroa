@@ -1,0 +1,4 @@
+C:\Ander\Workspace\C\proiektuak\GOsasun_tentsiometroa_glukometroa\GOsasun_tentsiometroa_glukometroa\obj\Debug\GOsasun_tentsiometroa_glukometroa.csproj.AssemblyReference.cache
+C:\Ander\Workspace\C\proiektuak\GOsasun_tentsiometroa_glukometroa\GOsasun_tentsiometroa_glukometroa\obj\Debug\tentsiometro_digitala.LeihoNagusia.resources
+C:\Ander\Workspace\C\proiektuak\GOsasun_tentsiometroa_glukometroa\GOsasun_tentsiometroa_glukometroa\obj\Debug\GOsasun_tentsiometroa_glukometroa.Properties.Resources.resources
+C:\Ander\Workspace\C\proiektuak\GOsasun_tentsiometroa_glukometroa\GOsasun_tentsiometroa_glukometroa\obj\Debug\GOsasun_tentsiometroa_glukometroa.csproj.GenerateResource.cache

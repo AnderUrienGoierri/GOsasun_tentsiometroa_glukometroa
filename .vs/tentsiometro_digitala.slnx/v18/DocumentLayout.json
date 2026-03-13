@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Ander\\Workspace\\C\\proiektuak\\tentsiometro_digitala\\",
+  "WorkspaceRootPath": "C:\\Ander\\Workspace\\C\\proiektuak\\GOsasun_tentsiometroa_glukometroa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01F8926A-498E-469B-B7AE-B949DED59BE2}|tentsiometro_digitala\\tentsiometro_digitala.csproj|c:\\ander\\workspace\\c\\proiektuak\\tentsiometro_digitala\\tentsiometro_digitala\\leihonagusia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{01F8926A-498E-469B-B7AE-B949DED59BE2}|tentsiometro_digitala\\tentsiometro_digitala.csproj|c:\\ander\\workspace\\c\\proiektuak\\gosasun_tentsiometroa_glukometroa\\tentsiometro_digitala\\leihonagusia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{01F8926A-498E-469B-B7AE-B949DED59BE2}|tentsiometro_digitala\\tentsiometro_digitala.csproj|solutionrelative:tentsiometro_digitala\\leihonagusia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01F8926A-498E-469B-B7AE-B949DED59BE2}|tentsiometro_digitala\\tentsiometro_digitala.csproj|C:\\Ander\\Workspace\\C\\proiektuak\\tentsiometro_digitala\\tentsiometro_digitala\\leihonagusia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01F8926A-498E-469B-B7AE-B949DED59BE2}|tentsiometro_digitala\\tentsiometro_digitala.csproj|solutionrelative:tentsiometro_digitala\\leihonagusia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01F8926A-498E-469B-B7AE-B949DED59BE2}|tentsiometro_digitala\\tentsiometro_digitala.csproj|C:\\Ander\\Workspace\\C\\proiektuak\\GOsasun_tentsiometroa_glukometroa\\tentsiometro_digitala\\leihonagusia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F8926A-498E-469B-B7AE-B949DED59BE2}|tentsiometro_digitala\\tentsiometro_digitala.csproj|solutionrelative:tentsiometro_digitala\\leihonagusia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,18 +17,22 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 233,
+          "DockedWidth": 56,
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         },
         {
-          "DockedWidth": 167,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 344,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,27 +40,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LeihoNagusia.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Ander\\Workspace\\C\\proiektuak\\tentsiometro_digitala\\tentsiometro_digitala\\LeihoNagusia.cs",
+              "DocumentIndex": 1,
+              "Title": "LeihoNagusia.cs",
+              "DocumentMoniker": "C:\\Ander\\Workspace\\C\\proiektuak\\GOsasun_tentsiometroa_glukometroa\\tentsiometro_digitala\\LeihoNagusia.cs",
               "RelativeDocumentMoniker": "tentsiometro_digitala\\LeihoNagusia.cs",
-              "ToolTip": "C:\\Ander\\Workspace\\C\\proiektuak\\tentsiometro_digitala\\tentsiometro_digitala\\LeihoNagusia.cs [Dise\u00F1o]",
-              "RelativeToolTip": "tentsiometro_digitala\\LeihoNagusia.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Ander\\Workspace\\C\\proiektuak\\GOsasun_tentsiometroa_glukometroa\\tentsiometro_digitala\\LeihoNagusia.cs",
+              "RelativeToolTip": "tentsiometro_digitala\\LeihoNagusia.cs",
+              "ViewState": "AgIAAHgBAAAAAAAAAAAIwJEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T08:05:36.479Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-03-13T12:36:41.707Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LeihoNagusia.Designer.cs",
-              "DocumentMoniker": "C:\\Ander\\Workspace\\C\\proiektuak\\tentsiometro_digitala\\tentsiometro_digitala\\LeihoNagusia.Designer.cs",
-              "RelativeDocumentMoniker": "tentsiometro_digitala\\LeihoNagusia.Designer.cs",
-              "ToolTip": "C:\\Ander\\Workspace\\C\\proiektuak\\tentsiometro_digitala\\tentsiometro_digitala\\LeihoNagusia.Designer.cs",
-              "RelativeToolTip": "tentsiometro_digitala\\LeihoNagusia.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAASAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LeihoNagusia.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Ander\\Workspace\\C\\proiektuak\\GOsasun_tentsiometroa_glukometroa\\tentsiometro_digitala\\LeihoNagusia.cs",
+              "RelativeDocumentMoniker": "tentsiometro_digitala\\LeihoNagusia.cs",
+              "ToolTip": "C:\\Ander\\Workspace\\C\\proiektuak\\GOsasun_tentsiometroa_glukometroa\\tentsiometro_digitala\\LeihoNagusia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "tentsiometro_digitala\\LeihoNagusia.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T08:05:31.655Z"
+              "WhenOpened": "2026-03-13T12:36:42.231Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
